@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solaris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Rubrik -->
+    <header class="rubrikContent">
+        <h1>Solaris</h1>
+        <p>Din guide över solsystemet Vintergatan!</p>
+    </header>
+
+    <!-- Sök containern -->
+    <section class="search-container">
+        <input type="text" id="searchInput" placeholder="Sök planet">
+        <button id="searchButton">Sök</button>
+        <!-- Felmeddelande om någon annat än korrekt namn på planet skrivs in -->
+        <aside id="errorMessage" style="color: rgb(95, 174, 244);"></aside>
+    </section>
+
+    <!-- Container där planeterna läggs dynamiskt till från APIn -->
+    <section class="planet-container"> </section>
+    <!-- Modal för att visa planetinformation med tillbaka knapp -->
+    <aside id="planetModal" class="modal">
+        <article class="modal-content">
+            <aside id="output"></aside> <button class="close">Tillbaka</button>
+        </article>
+    </aside>
+
+    <!-- Kod för Ufot som anropar javascripten via id -->
+    <article id="ufo">
+        <!-- Ufots pratbubbla -->
+        <aside class="tooltip">Hej, jag heter Uffe Ufo!</aside>
+        <!-- Boxar för att tillämpa styling på Ufot -->
+        <article class="ufo-lights">
+            <aside class="ufo-light"></aside>
+            <aside class="ufo-light"></aside>
+            <aside class="ufo-light"></aside>
+        </article>
+        <!-- Alien till Ufot -->
+        <aside class="alien"></aside>
+    </article>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
